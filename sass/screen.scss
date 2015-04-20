@@ -1,20 +1,25 @@
 @import "compass";
 
+// cca logo svg
 @import "cca_logo";
 
+// colors
 $black: #000000;
 $gray: #CCCCCC;
 $gray-dark: #666666;
 $red: #FF0000;
 $orange:  #F16522;
 
-input {
-	&[type="text"],
-	&[type="email"] {
-		max-width: 35em;
-		height: 3.5em;
-	}
+// font
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+body {
+	font-family: $font-family-sans-serif;
 }
+
+// cca logo styles
 .icon-c-logo:before {
   color: white;
   content: "\e000";
@@ -32,10 +37,39 @@ footer {
   }
 }
 
+// form components
+input {
+	&[type="text"],
+	&[type="email"] {
+		max-width: 35em;
+		height: 3.5em;
+	}
+}
+.form-control {
+	border-color: $orange;
+}
+.radio input[type=radio] {
+	margin-left: 0;
+}
+.btn-primary {
+	background-color: $orange;
+	border-color: $orange;
+	&:hover {
+		background-color: lighten($orange, 5%);
+		border-color: $orange;
+	}
+}
+
+// main content components
+.main-container {
+	padding: 80px 15px;
+}
 h1 {
 	border-bottom: 1px solid $gray;
 	padding-bottom: 0.5em;
 }
+
+// navbar
 .navbar-inverse {
 	background-color: $orange;
 	border-color: $orange;
@@ -48,6 +82,8 @@ h1 {
 		font-size: 1.1em;
 	}
 }
+
+// sidebar
 .well {
 	border-color: $orange;
 	background-color: white;
@@ -73,23 +109,8 @@ aside {
 		margin: 0.5em 0;
 	}
 }
-.form-control {
-	border-color: $orange;
-}
-.radio input[type=radio] {
-	margin-left: 0;
-}
-.btn-primary {
-	background-color: $orange;
-	border-color: $orange;
-	&:hover {
-		background-color: lighten($orange, 5%);
-		border-color: $orange;
-	}
-}
-.main-container {
-	padding: 80px 15px;
-}
+
+// footer
 footer {
 	border-top: 1px solid $gray;
 	padding: 20px;

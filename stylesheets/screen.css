@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @font-face {
   font-family: "cca-logo";
   src: url("../fonts/cca-logo.eot");
@@ -20,113 +21,118 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 12, ../sass/screen.scss */
-input[type="text"], input[type="email"] {
-  max-width: 35em;
-  height: 3.5em;
+/* line 18, ../sass/screen.scss */
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 .icon-c-logo:before {
   color: white;
   content: "\e000";
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 .icon-a-logo:before {
   color: white;
   content: "\e001";
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 footer .icon-c-logo:before {
   color: #666666;
 }
-/* line 30, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 footer .icon-a-logo:before {
   color: #FF0000;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
+input[type="text"], input[type="email"] {
+  max-width: 35em;
+  height: 3.5em;
+}
+
+/* line 48, ../sass/screen.scss */
+.form-control {
+  border-color: #F16522;
+}
+
+/* line 51, ../sass/screen.scss */
+.radio input[type=radio] {
+  margin-left: 0;
+}
+
+/* line 54, ../sass/screen.scss */
+.btn-primary {
+  background-color: #F16522;
+  border-color: #F16522;
+}
+/* line 57, ../sass/screen.scss */
+.btn-primary:hover {
+  background-color: #f3763a;
+  border-color: #F16522;
+}
+
+/* line 64, ../sass/screen.scss */
+.main-container {
+  padding: 80px 15px;
+}
+
+/* line 67, ../sass/screen.scss */
 h1 {
   border-bottom: 1px solid #CCCCCC;
   padding-bottom: 0.5em;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .navbar-inverse {
   background-color: #F16522;
   border-color: #F16522;
 }
-/* line 42, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
-/* line 45, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .navbar-inverse .cca-logo {
   float: right;
   padding: 1em;
   font-size: 1.1em;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .well {
   border-color: #F16522;
   background-color: white;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 aside h2 {
   font-size: 1.5em;
   border-bottom: 1px solid #000000;
   padding-bottom: 0.5em;
 }
-/* line 61, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 aside .about {
   color: #F16522;
   padding: 1em 0;
 }
-/* line 65, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 aside a {
   color: #000000;
   font-weight: bold;
 }
-/* line 68, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 aside a:hover {
   color: #000000;
 }
-/* line 72, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 aside div {
   margin: 0.5em 0;
 }
 
-/* line 76, ../sass/screen.scss */
-.form-control {
-  border-color: #F16522;
-}
-
-/* line 79, ../sass/screen.scss */
-.radio input[type=radio] {
-  margin-left: 0;
-}
-
-/* line 82, ../sass/screen.scss */
-.btn-primary {
-  background-color: #F16522;
-  border-color: #F16522;
-}
-/* line 85, ../sass/screen.scss */
-.btn-primary:hover {
-  background-color: #f3763a;
-  border-color: #F16522;
-}
-
-/* line 90, ../sass/screen.scss */
-.main-container {
-  padding: 80px 15px;
-}
-
-/* line 93, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 footer {
   border-top: 1px solid #CCCCCC;
   padding: 20px;
