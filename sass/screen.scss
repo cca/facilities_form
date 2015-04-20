@@ -1,4 +1,3 @@
-
 @import "compass";
 
 @import "cca_logo";
@@ -9,6 +8,12 @@ $gray-dark: #666666;
 $red: #FF0000;
 $orange:  #F16522;
 
+input {
+	&[type="text"],
+	&[type="email"] {
+		max-width: 35em;
+	}
+}
 .icon-c-logo:before {
   color: white;
   content: "\e000";
