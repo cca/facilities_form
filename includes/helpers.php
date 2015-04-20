@@ -30,3 +30,14 @@ function input($name, $type) {
 				<input type="' . $type  .'" class="form-control" id="' . $id . '" placeholder="' . $name . '">
 				</div>';
 }
+
+function textarea($name) {
+
+	$id = strtolower(str_replace(' ', '_', $name));
+
+	return '<div class="form-group">
+	       <label for="' . $id . '">' . $name . '</label>
+	       <textarea class="form-control" id="' . $id . '" rows="5">
+	       </textarea>
+	       </div>';
+}

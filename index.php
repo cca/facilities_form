@@ -94,7 +94,7 @@
 
 		          print input("Area", "text");
 		          print input("Title", "text");
-		          print input("Description", "text");
+		          print textarea("Description");
 
 		          ?>
 							<div class="form-actions">
