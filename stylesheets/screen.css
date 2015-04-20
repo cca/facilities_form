@@ -109,30 +109,31 @@ h1 {
 
 /* line 92, ../sass/screen.scss */
 aside h2 {
-  font-size: 1.5em;
   border-bottom: 1px solid #000000;
+  font-size: 1.5em;
   padding-bottom: 0.5em;
+  text-transform: uppercase;
 }
-/* line 97, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 aside .about {
   color: #F16522;
   padding: 1em 0;
 }
-/* line 101, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 aside a {
   color: #000000;
   font-weight: bold;
 }
-/* line 104, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 aside a:hover {
   color: #000000;
 }
-/* line 108, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 aside div {
   margin: 0.5em 0;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 footer {
   border-top: 1px solid #CCCCCC;
   padding: 20px;
