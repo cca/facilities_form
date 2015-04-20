@@ -80,10 +80,10 @@ aside {
 	margin-left: 0;
 }
 .btn-primary {
-	background-color: lighten($orange, 5%);
+	background-color: $orange;
 	border-color: $orange;
 	&:hover {
-		background-color: $orange;
+		background-color: lighten($orange, 5%);
 		border-color: $orange;
 	}
 }

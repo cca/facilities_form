@@ -112,12 +112,12 @@ aside div {
 
 /* line 82, ../sass/screen.scss */
 .btn-primary {
-  background-color: #f3763a;
+  background-color: #F16522;
   border-color: #F16522;
 }
 /* line 85, ../sass/screen.scss */
 .btn-primary:hover {
-  background-color: #F16522;
+  background-color: #f3763a;
   border-color: #F16522;
 }
 
