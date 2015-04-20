@@ -23,109 +23,110 @@
 /* line 12, ../sass/screen.scss */
 input[type="text"], input[type="email"] {
   max-width: 35em;
+  height: 3.5em;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 .icon-c-logo:before {
   color: white;
   content: "\e000";
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 .icon-a-logo:before {
   color: white;
   content: "\e001";
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 footer .icon-c-logo:before {
   color: #666666;
 }
-/* line 29, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 footer .icon-a-logo:before {
   color: #FF0000;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 h1 {
   border-bottom: 1px solid #CCCCCC;
   padding-bottom: 0.5em;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .navbar-inverse {
   background-color: #F16522;
   border-color: #F16522;
 }
-/* line 41, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .navbar-inverse .cca-logo {
   float: right;
   padding: 1em;
   font-size: 1.1em;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 .well {
   border-color: #F16522;
   background-color: white;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 aside h2 {
   font-size: 1.5em;
   border-bottom: 1px solid #000000;
   padding-bottom: 0.5em;
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 aside .about {
   color: #F16522;
   padding: 1em 0;
 }
-/* line 64, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 aside a {
   color: #000000;
   font-weight: bold;
 }
-/* line 67, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 aside a:hover {
   color: #000000;
 }
-/* line 71, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 aside div {
   margin: 0.5em 0;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .form-control {
   border-color: #F16522;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .radio input[type=radio] {
   margin-left: 0;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .btn-primary {
   background-color: #f3763a;
   border-color: #F16522;
 }
-/* line 84, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .btn-primary:hover {
   background-color: #F16522;
   border-color: #F16522;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .main-container {
   padding: 80px 15px;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 footer {
   border-top: 1px solid #CCCCCC;
   padding: 20px;

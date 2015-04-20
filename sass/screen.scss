@@ -12,6 +12,7 @@ input {
 	&[type="text"],
 	&[type="email"] {
 		max-width: 35em;
+		height: 3.5em;
 	}
 }
 .icon-c-logo:before {
