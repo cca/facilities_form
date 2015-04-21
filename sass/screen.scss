@@ -45,6 +45,10 @@ input {
 		height: 3.5em;
 	}
 }
+.required > label:after {
+	content: " *";
+	color: $red;
+}
 .form-control {
 	border-color: $orange;
 }
