@@ -149,3 +149,7 @@ footer {
   margin-top: 20px;
   padding: 20px;
 }
+/* line 125, ../sass/screen.scss */
+footer a:hover {
+  text-decoration: none;
+}

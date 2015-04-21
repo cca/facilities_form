@@ -1,5 +1,5 @@
 		<footer class="container">
-	    <i class="icon-c-logo"></i><i class="icon-c-logo"></i><i class="icon-a-logo"></i>
+	    <a href="//www.cca.edu"><i class="icon-c-logo"></i><i class="icon-c-logo"></i><i class="icon-a-logo"></i></a>
 		</footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
