@@ -29,7 +29,7 @@ function input($id, $label, $type, $value, $options) {
 
 		default:
 		  $input = sprintf('<input type="%s" name="%s" class="form-control" 
-		  	id="%s" value="%s">', $type, $id, $id, $value);
+		  	id="%s" value="%s">%s', $type, $id, $id, $value, $options['help']);
 	}
 
   return '<div class="form-group form-component--' . $id . ' required">

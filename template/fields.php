@@ -7,10 +7,12 @@ $oak_buildings = array("Avenue Apartments", "B Building", "Barclay Simpson Sculp
 $sf_buildings = array("Communications", "Hooper I", "Hooper II", "Hooper III", "Kansas 350", "Kansas 360", "Main Building", "Orientations (DeHaro)", "Student Center (80 Carolina)");
 $categories = array("Building Repair", "Electrical/Lighting", "Furniture Assembly/Repair", "Graffiti Removal", "Janitorial", "Keys/Access", "Landscaping", "Mechanical/Climate Control", "Plumbing", "Other");
 
+$username_help = array("help"=>"(If you would like to request service and do not have a CCA email account, please contact Facilities at 415.551.9300)");
+
 $fields = array(
   array("id"=>"first_name", "label"=>"First Name", "type"=>"text"),
   array("id"=>"last_name", "label"=>"Last Name", "type"=>"text"),
-  array("id"=>"email", "label"=>"Email", "type"=>"email"),
+  array("id"=>"email", "label"=>"CCA Email", "type"=>"email", "options"=>$username_help),
   array("id"=>"phone", "label"=>"Phone", "type"=>"text"),
   array("id"=>"user_group", "label"=>"User Group", "type"=>"radio", "options"=>$user_groups),
   array("id"=>"campus", "label"=>"Campus", "type"=>"radio", "options"=>$campuses),
