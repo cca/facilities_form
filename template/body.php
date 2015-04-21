@@ -26,7 +26,11 @@ if ($success) {
 	include_once "success.php";
 	// send email
 	$to = "aspafford@cca.edu";
-	send_email_message($to, $_POST, $fields);
+	$subject = "Facilities Service Request";
+	$message = email_message($_POST, $fields);
+	print "<pre>" . $message . "</pre>";
+	mail($to, $subject, $message);
+
 } else {
 	include_once "form.php";
 }
