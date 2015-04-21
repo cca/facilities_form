@@ -4,12 +4,23 @@
   $(function() {
 
     // toggle campus building options
-  	$oakBuildingOptions = $('.form-component--oakland_building').hide();
-  	$sfBuildingOptions = $('.form-component--san_francisco_building').hide();
+  	$oakBuildingOptions = $('.form-component--oak_building').hide();
+  	$sfBuildingOptions = $('.form-component--sf_building').hide();
+
+    var campusValue = $( ".form-component--campus input:radio:checked" ).val();
+
+    if (campusValue == 'Oakland') {
+      $sfBuildingOptions.hide();
+      $oakBuildingOptions.show();
+    } 
+    if (campusValue == "San Francisco") {
+      $oakBuildingOptions.hide();
+      $sfBuildingOptions.show();
+    }
 
   	$('.form-component--campus').change(function() {
 
-			var campusValue = $( ".form-component--campus input:radio:checked" ).val();
+			campusValue = $( ".form-component--campus input:radio:checked" ).val();
 
 			if (campusValue == 'Oakland') {
 				$sfBuildingOptions.hide();
