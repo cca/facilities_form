@@ -41,7 +41,6 @@ footer {
 input {
 	&[type="text"],
 	&[type="email"] {
-		max-width: 35em;
 		height: 3.5em;
 	}
 }
@@ -51,6 +50,9 @@ input {
 }
 .form-control {
 	border-color: $orange;
+}
+.form-group {
+	max-width: 35em;
 }
 .radio input[type=radio] {
 	margin-left: 0;
