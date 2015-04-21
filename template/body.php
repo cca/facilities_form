@@ -28,8 +28,13 @@ if ($success) {
 	$to = "aspafford@cca.edu";
 	$subject = "Facilities Service Request";
 	$message = email_message($_POST, $fields);
+  $headers = "From: " . strip_tags($_POST['email']) . "\r\n";
+  $headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
+  $headers .= "MIME-Version: 1.0\r\n";
+  $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	mail($to, $subject, $message, $headers);
+
 	print "<pre>" . $message . "</pre>";
-	mail($to, $subject, $message);
 
 } else {
 	include_once "form.php";
