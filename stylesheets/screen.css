@@ -142,5 +142,6 @@ aside div {
 /* line 119, ../sass/screen.scss */
 footer {
   border-top: 1px solid #CCCCCC;
+  margin-top: 20px;
   padding: 20px;
 }
