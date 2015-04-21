@@ -1,43 +1,68 @@
 <?php 
 
-/* radio input */
-function radio($name, $values) { 
+/* format form input */
+function input($id, $label, $type, $value, $options) {
 
-	$id = strtolower(str_replace(' ', '_', $name));
+	switch($type) {
 
-	foreach ($values as $value) {
-		$options .= 
-	    '<div class="form-type-radio form-item radio">
-	    <input type="radio" id="' . $id . '" name="' . $id . '" value="' . $value . '" class="form-radio" />
-	    <label for="' . $id .'">' . $value . '</label>
-	    </div>';
-   }
+		case "radio":
+		  foreach($options as $option) {
 
-  return 
-    '<div class="form-group form-component--' . $id . '">
-	  <label for="' . $id . '">' . $name . '</label>
-	  <div id="' . $name . '" class="form-radios">'
-    . $options . '</div></div>';
+		  	$checked = ($value == $option) ? "checked" : "";
+
+				$radio_options .= 
+				  '<div class="form-type-radio form-item radio">
+			    <input type="radio" id="' . $id . '" name="' . $id . 
+			    '" value="' . $option . '" class="form-radio" ' . $checked . '>
+			    <label for="' . $id .'">' . $option . '</label>
+			    </div>';
+		  }
+
+	    $input = sprintf('<div id="%s" class="form-radios">%s</div>', 
+	    	$id, $radio_options); 
+	    break;
+
+		case "textarea":
+	    $input = sprintf('<textarea name="%s" class="form-control" 
+	    	id="%s" rows="5">%s</textarea>', $id, $id, $value);
+	    break;
+
+		default:
+		  $input = sprintf('<input type="%s" name="%s" class="form-control" 
+		  	id="%s" value="%s">', $type, $id, $id, $value);
+	}
+
+  return '<div class="form-group form-component--' . $id . ' required">
+				<label for="' . $id . '">' . $label . '</label>'
+				. $input .
+				'</div>';
 }
 
-/* text input */
-function input($name, $type) {
-
-	$id = strtolower(str_replace(' ', '_', $name));
-
-  return '<div class="form-group form-component--' . $id . '">
-				<label for="' . $id . '">' . $name . '</label>
-				<input type="' . $type  .'" class="form-control" id="' . $id . '" placeholder="' . $name . '">
-				</div>';
+/* form validation */
+function validate($form, $fields) {
+	$errors = array();
+	foreach($fields as $field) {
+		if (empty($form[$field['id']])) {
+			// skip validation of building options
+			if ($field['id'] != "sf_building" && $field['id'] != "oak_building") {
+				$errors[] = sprintf('<strong>%s</strong> field is required', $field['label']);
+			}
+		}
+	}
+	if (count($errors)) { 
+		$error_msg = '<div class="alert alert-danger"><ul><li>' 
+		             . implode('</li><li>', $errors) . '</li></ul></div>';
+		return $error_msg;
+	}
 }
 
-function textarea($name) {
-
-	$id = strtolower(str_replace(' ', '_', $name));
-
-	return '<div class="form-group">
-	       <label for="' . $id . '">' . $name . '</label>
-	       <textarea class="form-control" id="' . $id . '" rows="5">
-	       </textarea>
-	       </div>';
+function email_message($form, $fields) {
+	$values = array();
+	foreach($fields as $field) {
+		if (!empty($form[$field['id']])) {
+				$values[] = sprintf('<strong>%s</strong>: %s', $field['label'], $form[$field['id']]);
+		}
+	}
+	$email_msg = '<ul><li>' . implode('</li><li>', $values) . '</li></ul></div>';
+	return $email_msg;
 }
