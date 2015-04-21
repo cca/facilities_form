@@ -56,13 +56,24 @@ function validate($form, $fields) {
 	}
 }
 
-function email_message($form, $fields) {
+function send_email_message($to, $form, $fields) {
 	$values = array();
 	foreach($fields as $field) {
 		if (!empty($form[$field['id']])) {
-				$values[] = sprintf('<strong>%s</strong>: %s', $field['label'], $form[$field['id']]);
+				$values[] = sprintf('%s: %s', $field['label'], $form[$field['id']]);
 		}
 	}
-	$email_msg = '<ul><li>' . implode('</li><li>', $values) . '</li></ul></div>';
+	$email_msg = implode('\r\n', $values);
 	return $email_msg;
+
+	// send email
+	$subject = "Facilities Service Request";
+	$headers = 'From: ' . $form['email'] . "\r\n" .
+    'Reply-To: ' . $form['email'] . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+	$message = email_message($_POST, $fields);
+
+
+	mail($to, $subject, $message, $headers);
 }
