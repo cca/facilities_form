@@ -6,15 +6,19 @@ function input($id, $label, $type, $value, $options) {
 	switch($type) {
 
 		case "radio":
+		  // set counter for option ids
+		  $counter = 0;
 		  foreach($options as $option) {
 
 		  	$checked = ($value == $option) ? "checked" : "";
 
+		  	$option_id = $id . '-' . $counter++;
+
 				$radio_options .= 
 				  '<div class="form-type-radio form-item radio">
-			    <input type="radio" id="' . $id . '" name="' . $id . 
+			    <input type="radio" id="' . $option_id . '" name="' . $id . 
 			    '" value="' . $option . '" class="form-radio" ' . $checked . '>
-			    <label for="' . $id .'">' . $option . '</label>
+			    <label for="' . $option_id .'">' . $option . '</label>
 			    </div>';
 		  }
 
