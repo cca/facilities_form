@@ -3,8 +3,8 @@
 // radio field options
 $user_groups = array("Faculty", "Staff", "Student", "Other");
 $campuses = array("Oakland", "San Francisco");
-$oak_buildings = array("Avenue Apartments", "B Building", "Barclay Simpson Sculpture Studio", "Blattner Print Studio", "Cafe", "CAPL/ET (5275 Broadway)", "Carriage House", "Clifton Hall", "Counseling Services (5299 College)", "Facilities", "First Year Studios (5288 College)", "Founder's Hall", "Founder's Hall (Meyer Library)", "Irwin Student Center", "Macky Hall", "Martinez Annex", "Martinez Hall", "North/South Galleries", "Oliver Art Center", "Ralls Studio", "Shaklee Building", "Terrace Apartments (4Plex)", "Textiles / L1 - L4 Classrooms (5301 Broadway)", "Treadwell Hall", "Webster Hall");
-$sf_buildings = array("Communications", "Hooper I", "Hooper II", "Hooper III", "Kansas 350", "Kansas 360", "Main Building", "Orientations (DeHaro)", "Student Center (80 Carolina)");
+$oak_buildings = array("Avenue Apartments", "B Building", "Barclay Simpson", "Cafe", "Clifton Hall", "ETS / CAPL", "Carriage House", "Facilities", "First Year Studio", "Founders", "Irwin", "Macky Hall", "Martinez Annex", "Martinez / Blattner Print Studio", "College Avenue Galleries", "Oliver Art Center", "Ralls", "Shaklee", "Broadway Terrace", "Textiles", "Treadwell", "Webster");
+$sf_buildings = array("Back Lot", "Carolina", "Deharo", "Eighth ", "Hooper", "Harriet", "Kansas", "Mission", "Other");
 $categories = array("Building Repair", "Electrical/Lighting", "Furniture Assembly/Repair", "Graffiti Removal", "Janitorial", "Keys/Access", "Landscaping", "Mechanical/Climate Control", "Plumbing", "Other");
 
 $username_help = array("help"=>"(If you would like to request service and do not have a CCA email account, please contact Facilities at 415.551.9300)");
