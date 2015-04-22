@@ -1,6 +1,8 @@
-<h1>Submit a Facilities Service Request</h1>
+<p>Please fill out this form to request service from the Facilities Department.</p>
 
-<p>To request service or report a maintenance or repair issue, please fill out this form. Provide a clear and concise description. This information will help us in prioritizing our responses. Thank you for contacting the Facilities Department at CCA.</p>
+<p>Provide a clear and concise description. This information will help us prioritize our response.</p>
+
+<p>For technology Helpdesk Ticket Submission Form please visit: <a href="//technology.cca.edu">technology.cca.edu</a></p>
 
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
   <?php 
