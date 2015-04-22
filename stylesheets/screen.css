@@ -105,51 +105,55 @@ h1 {
   color: white;
 }
 /* line 85, ../sass/screen.scss */
+.navbar-inverse .navbar-header:after {
+  clear: none;
+}
+/* line 88, ../sass/screen.scss */
 .navbar-inverse .cca-logo {
   float: right;
   padding: 1em;
   font-size: 1.2em;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .well {
   border-color: #F16522;
   background-color: white;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 aside h2 {
   border-bottom: 1px solid #000000;
   font-size: 1.5em;
   padding-bottom: 0.5em;
   text-transform: uppercase;
 }
-/* line 104, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 aside .about {
   color: #F16522;
   padding: 1em 0;
 }
-/* line 108, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 aside a {
   color: #000000;
   font-weight: bold;
 }
-/* line 111, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 aside a:hover {
   color: #000000;
 }
-/* line 115, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 aside div {
   margin: 0.5em 0;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 footer {
   border-top: 1px solid #CCCCCC;
   margin-top: 20px;
   padding: 20px;
 }
-/* line 125, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 footer a:hover {
   text-decoration: none;
 }

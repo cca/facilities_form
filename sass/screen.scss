@@ -82,6 +82,9 @@ h1 {
 	.navbar-brand {
 		color: white;
 	}
+	.navbar-header:after {
+		clear: none;
+	}
 	.cca-logo {
 		float: right;
 		padding: 1em;
