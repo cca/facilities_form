@@ -70,7 +70,9 @@ function email_message($form, $fields) {
 	}
 	$message = '<ul><li>' . implode('</li><li>', $values) . '</li></ul></div>';
 
-	$to = "aspafford@cca.edu";
+	// form sends to either sf or oak campus
+  $campus_email = array("San Francisco"=>"facilities-sf@cca.edu", "Oakland"=>"facilities-oak@cca.edu");
+	$to = $campus_email[$form['campus']];
 	$subject = "Facilities Service Request";
   $headers = "From: " . strip_tags($form['email']) . "\r\n";
   $headers .= "Reply-To: ". strip_tags($form['email']) . "\r\n";
