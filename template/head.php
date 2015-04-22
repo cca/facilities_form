@@ -1,6 +1,3 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
@@ -17,4 +14,4 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         -->
         <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    </head>
+        

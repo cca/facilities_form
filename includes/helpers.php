@@ -61,12 +61,22 @@ function validate($form, $fields) {
 }
 
 function email_message($form, $fields) {
+	// build email message from form values
 	$values = array();
 	foreach($fields as $field) {
 		if (!empty($form[$field['id']])) {
 				$values[] = sprintf('<strong>%s</strong>: %s', $field['label'], $form[$field['id']]);
 		}
 	}
-	$email_msg = '<ul><li>' . implode('</li><li>', $values) . '</li></ul></div>';
-	return $email_msg;
+	$message = '<ul><li>' . implode('</li><li>', $values) . '</li></ul></div>';
+
+	$to = "aspafford@cca.edu";
+	$subject = "Facilities Service Request";
+  $headers = "From: " . strip_tags($form['email']) . "\r\n";
+  $headers .= "Reply-To: ". strip_tags($form['email']) . "\r\n";
+  $headers .= "MIME-Version: 1.0\r\n";
+  $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	mail($to, $subject, $message, $headers);
+
+	return;
 }
