@@ -1,5 +1,4 @@
 <?php include_once "includes/helpers.php"; ?>
-
 <!doctype html>
 <html class="no-js" lang="">
   <head>
@@ -8,16 +7,21 @@
 
   <body>
 	<?php include_once "template/navbar.php"; ?>
-	<?php include_once "template/sidebar.php"; ?>
 
     <div class="main-container container">
       <div class="row">
+
+          <aside class="region region-sidebar-first col-sm-4" role="complementary">
+            <?php include_once "template/sidebar.php"; ?>
+          </aside>
+
           <div class="region region-content col-sm-8">
 
           <h1>Facilities Service Request Form</h1>
 
           <?php
-          include_once "template/fields.php";
+          // form fields defined in helpers.php
+          $fields = fields();
 
           // validation
           $success = FALSE;

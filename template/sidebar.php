@@ -1,6 +1,3 @@
-
-          <aside class="region region-sidebar-first col-sm-4" role="complementary">
-
             <div class="well">
               <h2>About Our Services</h2>
               <div class="about">The Facilities Department provides maintenance, repair, and ancillary services to support teaching, learning, and working within CCA’s built environment. </div>
@@ -27,5 +24,3 @@
 								<a href="">cca.edu/facilities</a>
 								</div>
 							</div>
-
-          </aside>
