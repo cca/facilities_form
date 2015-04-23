@@ -99,8 +99,13 @@ function email_message($form, $fields) {
 
 	// form sends to either sf or oak campus
   $campus_email = array("San Francisco"=>"facilities-sf@cca.edu", "Oakland"=>"facilities-oak@cca.edu");
+  // compus abreviation
+  $campus_short = array("San Francisco"=>"SF", "Oakland"=>"OAK");
+  // get oak or sf building
+  $building = strtolower($campus_short[$form['campus']]) . '_building';
+
 	$to = $campus_email[$form['campus']];
-	$subject = "Facilities Service Request";
+	$subject = $form['title'] . ' ' . $campus_short[$form['campus']] . '- ' . $form[$building] . ' ' . $form['area'];
   $headers = "From: " . strip_tags($form['email']) . "\r\n";
   $headers .= "Reply-To: ". strip_tags($form['email']) . "\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
