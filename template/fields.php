@@ -18,8 +18,8 @@ $fields = array(
   array("id"=>"campus", "label"=>"Campus", "type"=>"radio", "options"=>$campuses),
   array("id"=>"oak_building", "label"=>"Oakland Building", "type"=>"radio", "options"=>$oak_buildings),
   array("id"=>"sf_building", "label"=>"San Francisco Building", "type"=>"radio", "options"=>$sf_buildings),
-  array("id"=>"category", "label"=>"Category", "type"=>"radio", "options"=>$categories),
   array("id"=>"area", "label"=>"Room/Area", "type"=>"text"),
+  array("id"=>"category", "label"=>"Category", "type"=>"radio", "options"=>$categories),
   array("id"=>"title", "label"=>"One-line Description of Your Service Request", "type"=>"text"),
   array("id"=>"description", "label"=>"Full Description", "type"=>"textarea"),
 );
