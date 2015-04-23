@@ -2,7 +2,7 @@
 
 <p>Provide a clear and concise description. This information will help us prioritize our response.</p>
 
-<p>For technology Helpdesk Ticket Submission Form please visit: <a href="//technology.cca.edu">technology.cca.edu</a></p>
+<p>For ETS Help Desk please visit: <a href="//technology.cca.edu">technology.cca.edu</a></p>
 
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
   <?php 
