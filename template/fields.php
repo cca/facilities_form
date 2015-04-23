@@ -14,7 +14,7 @@ $fields = array(
   array("id"=>"last_name", "label"=>"Last Name", "type"=>"text"),
   array("id"=>"email", "label"=>"CCA Email", "type"=>"email", "options"=>$username_help),
   array("id"=>"phone", "label"=>"Phone", "type"=>"text"),
-  array("id"=>"user_group", "label"=>"Affiliation", "type"=>"radio", "options"=>$user_groups),
+  array("id"=>"affiliation", "label"=>"Affiliation", "type"=>"radio", "options"=>$user_groups),
   array("id"=>"campus", "label"=>"Campus", "type"=>"radio", "options"=>$campuses),
   array("id"=>"oak_building", "label"=>"Oakland Building", "type"=>"radio", "options"=>$oak_buildings),
   array("id"=>"sf_building", "label"=>"San Francisco Building", "type"=>"radio", "options"=>$sf_buildings),
