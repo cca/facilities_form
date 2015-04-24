@@ -17,7 +17,7 @@
 
           <div class="region region-content col-sm-8">
 
-          <h1>Facilities Service Request Form</h1>
+          <h1 id="request-form">Facilities Service Request Form</h1>
 
           <?php
           // form fields defined in helpers.php

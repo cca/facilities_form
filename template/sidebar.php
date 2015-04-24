@@ -5,22 +5,22 @@
               <div class="contact">
                 <div>
                 SUBMIT A SERVICE REQUEST:<br />
-								<a href="">facilities.cca.edu</a>
+								<a href="#request-form">facilities.cca.edu</a>
 								</div>
 								<div>
 								EMAIL COMMENTS OR QUESTIONS:<br />
-								<a href="">facilities@cca.edu</a>
+								<a href="mailto:facilities@cca.edu">facilities@cca.edu</a>
 								</div>
 								<div>
 								CALL DURING BUSINESS HOURS:<br />
-								<a href="">415.551.9300</a>
+								<a href="tel:+1-415-551-9300">415.551.9300</a>
 								</div>
 								<div>
 								REQUEST EVENT SUPPORT:<br />
-								<a href="">https://virtualems.cca.edu</a>
+								<a href="https://virtualems.cca.edu">https://virtualems.cca.edu</a>
 								</div>
 								<div>
 								LEARN MORE:<br />
-								<a href="">cca.edu/facilities</a>
+								<a href="//cca.edu/facilities">cca.edu/facilities</a>
 								</div>
 							</div>
