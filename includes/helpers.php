@@ -95,7 +95,10 @@ function email_message($form, $fields) {
 				$values[] = sprintf('<strong>%s</strong>: %s', $field['label'], $form[$field['id']]);
 		}
 	}
-	$message = '<ul><li>' . implode('</li><li>', $values) . '</li></ul></div>';
+	// pull out description to style differently
+	$full_description = array_pop($values);
+	$message = '<ul><li>' . implode('</li><li>', $values) . '</li></ul>';
+	$message.= $full_description;
 
 	// form sends to either sf or oak campus
   $campus_email = array("San Francisco"=>"facilities-sf@cca.edu", "Oakland"=>"facilities-oak@cca.edu");
