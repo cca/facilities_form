@@ -74,11 +74,14 @@ function validate($form, $fields) {
 	$errors = array();
 	foreach($fields as $field) {
 		if (empty($form[$field['id']])) {
-			// skip validation of building options
+			// validate building options separately
 			if ($field['id'] != "sf_building" && $field['id'] != "oak_building") {
 				$errors[] = sprintf('<strong>%s</strong> field is required', $field['label']);
 			}
 		}
+	}
+	if (empty($form['sf_building']) && empty($form['oak_building'])) {
+		$errors[] = ('<strong>Building</strong> field is required');
 	}
 	if (count($errors)) { 
 		$error_msg = '<div class="alert alert-danger"><ul><li>' 

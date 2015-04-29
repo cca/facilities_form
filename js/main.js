@@ -3,9 +3,14 @@
   // This is the shortened form of $(document).ready().
   $(function() {
 
+    var campusValue = $( ".form-component--campus input:radio:checked" ).val();
     // hide campus building options
-  	$oakBuildingOptions = $('.form-component--oak_building').hide();
-  	$sfBuildingOptions = $('.form-component--sf_building').hide();
+    if (campusValue != 'Oakland') {
+    	$('.form-component--oak_building').hide();
+    }
+    if (campusValue != 'San Francisco') {
+    	$('.form-component--sf_building').hide();
+    }
 
   	$('.form-component--campus').change(function() {
 
@@ -13,17 +18,14 @@
 
       // toggle campus building options
 			if (campusValue == 'Oakland') {
-        $oakBuildingOptions = $('.form-component--oak_building').hide();
         $('.form-component--sf_building input:radio:checked').removeAttr('checked');
-				$sfBuildingOptions.hide();
-				$oakBuildingOptions.show();
+        $('.form-component--sf_building').hide();
+        $('.form-component--oak_building').show();
 			} else {
         $('.form-component--oak_building input:radio:checked').removeAttr('checked');
-				$oakBuildingOptions.hide();
-				$sfBuildingOptions.show();
+        $('.form-component--sf_building').show();
+        $('.form-component--oak_building').hide();
 			}
-
   	});
-
   });
 })(jQuery);
