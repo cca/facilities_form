@@ -4,8 +4,38 @@ function fields() {
 	// radio field options
 	$user_groups = array("Faculty", "Staff", "Student", "Other");
 	$campuses = array("Oakland", "San Francisco");
-	$oak_buildings = array("Avenue Apartments", "B Building", "Barclay Simpson", "Cafe", "Clifton Hall", "ETS / CAPL", "Carriage House", "Facilities", "First Year Studio", "Founders", "Irwin", "Macky Hall", "Martinez Annex", "Martinez / Blattner Print Studio", "College Avenue Galleries", "Oliver Art Center", "Ralls", "Shaklee", "Broadway Terrace", "Textiles", "Treadwell", "Webster");
-	$sf_buildings = array("Back Lot", "Carolina", "Deharo", "Eighth ", "Hooper", "Harriet", "Kansas", "Mission", "Other");
+	$oak_buildings = array(
+		"Avenue Apartments",
+		"B Building",
+		"Barclay Simpson",
+		"Cafe",
+		"Clifton Hall",
+		"ETS / CAPL",
+		"Carriage House",
+		"Facilities",
+		"First Year Studio",
+		"Founders",
+		"Irwin",
+		"Macky Hall",
+		"Martinez Annex",
+		"Martinez / Blattner Print Studio",
+		"College Avenue Galleries",
+		"Oliver Art Center",
+		"Ralls",
+		"Shaklee",
+		"Broadway Terrace",
+		"Textiles",
+		"Treadwell",
+	);
+	$sf_buildings = array(
+		"Back Lot",
+		"Carolina",
+		"Deharo",
+		"Eighth ",
+		"Hooper",
+		"Kansas",
+		"Other"
+	);
 	$categories = array("Building Repair", "Electrical/Lighting", "Furniture Assembly/Repair", "Graffiti Removal", "Janitorial", "Keys/Access", "Landscaping", "Mechanical/Climate Control", "Plumbing", "Other");
 
 	$username_help = array("help"=>"(If you would like to request service and do not have a CCA email account, please contact Facilities at 415.551.9300)");
