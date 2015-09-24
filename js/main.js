@@ -32,7 +32,6 @@
         $('.form-component--reshall_building').show();
         $('.form-component--sf_building').hide();
         $('.form-component--oak_building').hide();
-			}
 			} else {
         $('.form-component--oak_building input:radio:checked').removeAttr('checked');
         $('.form-component--reshall_building input:radio:checked').removeAttr('checked');
