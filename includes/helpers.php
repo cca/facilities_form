@@ -3,13 +3,11 @@
 function fields() {
 	// radio field options
 	$user_groups = array("Faculty", "Staff", "Student", "Other");
-	$campuses = array("Oakland", "San Francisco");
+	$locations = array("Residence Halls", "Oakland", "San Francisco");
 	$oak_buildings = array(
-		"Avenue Apartments",
 		"B Building",
 		"Barclay Simpson",
 		"Cafe",
-		"Clifton Hall",
 		"ETS / CAPL",
 		"Carriage House",
 		"Facilities",
@@ -26,6 +24,15 @@ function fields() {
 		"Broadway Terrace",
 		"Textiles",
 		"Treadwell",
+	);
+	$reshall_buildings = array(
+  "Avenue Apartments",
+  "Clifton Hall",
+  "Country Club Terra Apartments",
+  "Harriet Street Residences",
+  "Irwin Hall",
+  "Panoramic Residences",
+  "Webster Hall"
 	);
 	$sf_buildings = array(
 		"Back Lot",
@@ -46,9 +53,10 @@ function fields() {
 	  array("id"=>"email", "label"=>"CCA Email", "type"=>"email", "options"=>$username_help),
 	  array("id"=>"phone", "label"=>"Phone", "type"=>"text"),
 	  array("id"=>"affiliation", "label"=>"Affiliation", "type"=>"radio", "options"=>$user_groups),
-	  array("id"=>"campus", "label"=>"Campus", "type"=>"radio", "options"=>$campuses),
+	  array("id"=>"location", "label"=>"Location", "type"=>"radio", "options"=>$locations),
 	  array("id"=>"oak_building", "label"=>"Oakland Building", "type"=>"radio", "options"=>$oak_buildings),
 	  array("id"=>"sf_building", "label"=>"San Francisco Building", "type"=>"radio", "options"=>$sf_buildings),
+	  array("id"=>"reshall_building", "label"=>"Residence Halls", "type"=>"radio", "options"=>$reshall_buildings),
 	  array("id"=>"area", "label"=>"Room/Area", "type"=>"text"),
 	  array("id"=>"category", "label"=>"Category", "type"=>"radio", "options"=>$categories),
 	  array("id"=>"title", "label"=>"One-line Description of Your Service Request", "type"=>"text"),
@@ -105,12 +113,12 @@ function validate($form, $fields) {
 	foreach($fields as $field) {
 		if (empty($form[$field['id']])) {
 			// validate building options separately
-			if ($field['id'] != "sf_building" && $field['id'] != "oak_building") {
+			if ($field['id'] != "sf_building" && $field['id'] != "oak_building" && $field['id'] != "reshall_building") {
 				$errors[] = sprintf('<strong>%s</strong> field is required', $field['label']);
 			}
 		}
 	}
-	if (empty($form['sf_building']) && empty($form['oak_building'])) {
+	if (empty($form['sf_building']) && empty($form['oak_building']) && empty($form['reshall_building'])) {
 		$errors[] = ('<strong>Building</strong> field is required');
 	}
 	if (count($errors)) { 
@@ -133,10 +141,10 @@ function email_message($form, $fields) {
 	$message = '<ul><li>' . implode('</li><li>', $values) . '</li></ul>';
 	$message.= $full_description;
 
-	// form sends to either sf or oak campus
-  $campus_email = array("San Francisco"=>"facilities-sf@cca.edu", "Oakland"=>"facilities-oak@cca.edu");
+	// form sends to either housing or sf or oak campus
+  $campus_email = array("San Francisco"=>"facilities-sf@cca.edu", "Oakland"=>"facilities-oak@cca.edu", "Housing"=>"facilities-housing@cca.edu");
   // compus abreviation
-  $campus_short = array("San Francisco"=>"SF", "Oakland"=>"OAK");
+  $campus_short = array("San Francisco"=>"SF", "Oakland"=>"OAK", "Housing"=>"Housing");
   // get oak or sf building
   $building = strtolower($campus_short[$form['campus']]) . '_building';
 
