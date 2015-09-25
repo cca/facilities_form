@@ -28,7 +28,7 @@ function fields() {
 	$reshall_buildings = array(
   "Avenue Apartments",
   "Clifton Hall",
-  "Country Club Terra Apartments",
+  "Country Club Terrace Apartments",
   "Harriet Street Residences",
   "Irwin Hall",
   "Panoramic Residences",
