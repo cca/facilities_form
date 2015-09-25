@@ -144,7 +144,7 @@ function email_message($form, $fields) {
 	// form sends to either housing or sf or oak campus
   $campus_email = array("San Francisco"=>"facilities-sf@cca.edu", "Oakland"=>"facilities-oak@cca.edu", "Housing"=>"facilities-housing@cca.edu");
   // compus abreviation
-  $campus_short = array("San Francisco"=>"SF", "Oakland"=>"OAK", "Housing"=>"Housing");
+  $campus_short = array("San Francisco"=>"SF", "Oakland"=>"OAK", "Residence Halls"=>"Housing");
   // get oak or sf building
   $building = strtolower($campus_short[$form['location']]) . '_building';
 
