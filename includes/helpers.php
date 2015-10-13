@@ -10,7 +10,7 @@ function fields() {
 		"Cafe",
 		"ETS / CAPL",
 		"Carriage House",
-		"Facilities",
+		"Faculty Lounge/Facilities",
 		"First Year Studio",
 		"Founders",
 		"Irwin",
@@ -26,13 +26,13 @@ function fields() {
 		"Treadwell",
 	);
 	$reshall_buildings = array(
-  "Avenue Apartments",
-  "Clifton Hall",
-  "Country Club Terrace Apartments",
-  "Harriet Street Residences",
+  "Avenue",
+  "Clifton",
+  "Country Club Terrace",
+  "Harriet Street",
   "Irwin Hall",
-  "Panoramic Residences",
-  "Webster Hall"
+  "Panoramic",
+  "Webster",
 	);
 	$sf_buildings = array(
 		"Back Lot",
@@ -54,8 +54,8 @@ function fields() {
 	  array("id"=>"phone", "label"=>"Phone", "type"=>"text"),
 	  array("id"=>"affiliation", "label"=>"Affiliation", "type"=>"radio", "options"=>$user_groups),
 	  array("id"=>"location", "label"=>"Location", "type"=>"radio", "options"=>$locations),
-	  array("id"=>"oak_building", "label"=>"Oakland Building", "type"=>"radio", "options"=>$oak_buildings),
-	  array("id"=>"sf_building", "label"=>"San Francisco Building", "type"=>"radio", "options"=>$sf_buildings),
+	  array("id"=>"oak_building", "label"=>"Oakland Buildings", "type"=>"radio", "options"=>$oak_buildings),
+	  array("id"=>"sf_building", "label"=>"San Francisco Buildings", "type"=>"radio", "options"=>$sf_buildings),
 	  array("id"=>"reshall_building", "label"=>"Residence Halls", "type"=>"radio", "options"=>$reshall_buildings),
 	  array("id"=>"area", "label"=>"Room/Area", "type"=>"text"),
 	  array("id"=>"category", "label"=>"Category", "type"=>"radio", "options"=>$categories),
