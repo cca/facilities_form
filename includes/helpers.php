@@ -148,8 +148,9 @@ function email_message($form, $fields) {
   // get oak or sf building
   $building = strtolower($campus_short[$form['location']]) . '_building';
 
-	$to = $campus_email[$form['location']];
-	$subject = $form['title'] . ' ' . $campus_short[$form['location']] . '- ' . $form[$building] . ' ' . $form['area'];
+	 $to = $campus_email[$form['location']];
+# $subject = $form['title'] . ' ' . $campus_short[$form['location']] . '- ' . $form[$building] . ' ' . $form['area'];
+	 $subject = $campus_short[$form['location']] . '- ' . $form[$building] . ' ' . $form['area'] . ' ' . $form['title'];
   $headers = "From: " . strip_tags($form['email']) . "\r\n";
   $headers .= "Reply-To: ". strip_tags($form['email']) . "\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
