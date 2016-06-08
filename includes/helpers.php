@@ -30,7 +30,6 @@ function fields() {
   "Clifton",
   "Country Club Terrace",
   "Harriet Street",
-  "Hubble",
   "Irwin Hall",
   "Panoramic",
   "Webster",
@@ -41,6 +40,7 @@ function fields() {
 		"Deharo",
 		"Eighth ",
 		"Hooper",
+  "Hubble",
 		"Kansas",
 		"Other"
 	);
