@@ -40,7 +40,7 @@ function fields() {
 		"Deharo",
 		"Eighth ",
 		"Hooper",
-  "Hubble",
+  "Hubbell",
 		"Kansas",
 		"Other"
 	);
