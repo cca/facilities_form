@@ -44,7 +44,7 @@ function fields() {
 		"Kansas",
 		"Other"
 	);
-	$categories = array("Building Repair", "Electrical/Lighting", "Furniture Assembly/Repair", "Graffiti Removal", "Janitorial", "Keys/Access", "Landscaping", "Mechanical/Climate Control", "Plumbing", "Other");
+	$categories = array("Building Repair", "Electrical/Lighting", "Furniture Assembly/Repair", "Graffiti Removal", "Hazardous Waste Pick-Up", "Janitorial", "Keys/Access", "Landscaping", "Mechanical/Climate Control", "Plumbing", "Other");
 
 	$username_help = array("help"=>"(If you would like to request service and do not have a CCA email account, please contact Facilities at 415.551.9300)");
 
